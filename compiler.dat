@@ -1,0 +1,5 @@
+g++ -Wall -fexceptions -g -Iinclude -c main.cpp -o obj/Debug/main.o
+g++ -Wall -fexceptions -g -Iinclude -c src/Culebra.cpp -o obj/Debug/src/Culebra.o
+g++ -Wall -fexceptions -g -Iinclude -c src/Juego.cpp -o obj/Debug/src/Juego.o
+g++ -Wall -fexceptions -g -Iinclude -c src/Nodo.cpp -o obj/Debug/src/Nodo.o
+g++ -o Laberinto obj/Debug/main.o obj/Debug/src/Culebra.o obj/Debug/src/Juego.o obj/Debug/src/Nodo.o  -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_net -lSDL2_mixer  
